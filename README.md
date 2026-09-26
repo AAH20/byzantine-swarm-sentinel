@@ -39,7 +39,39 @@ Without deterministic Byzantine fault tolerance and physics-grounded telemetry a
 
 ---
 
-## 3. Mathematical Foundations & Verification Bounds
+## 3. Dual-Use Architectural Paradigm
+
+```mermaid
+graph TD
+    subgraph "Contested Operational Inputs"
+        DEF["Tactical Combat Drone Swarm<br/>- 16 to 32 Loitering Munitions / Recon UAVs<br/>- Internal Cyber Compromise & EW Spoofing<br/>- Injected Phantom Hypersonic Targets (> 30G)"]
+        IND["Gigafactory Autonomous AGV / AMR Fleet<br/>- 20 to 50 Material Transport Robots<br/>- Sensor Glitches & Hallucinated Obstacles<br/>- Impossible Dynamic Acceleration Claims"]
+    end
+
+    subgraph "byzantine-swarm-sentinel Core Engine"
+        PHYS["Kinematic Physics Auditor<br/>- Target Velocity Limit (Mach 3.5 / 1200 m/s)<br/>- 30G Dynamic Acceleration Clamping<br/>- Immediate 0.80 Trust Penalty Trigger"]
+        SPATIAL["Multi-Sensor Spatial Corroborator<br/>- Overlapping Sensor Field Matching<br/>- Phantom Target Cross-Verification (k >= 2)<br/>- Uncorroborated Ghost Track Pruning"]
+        BFT["Byzantine Fault Tolerant Arbiter<br/>- f <= (n - 1) / 3 Traitor Bound<br/>- 2f + 1 Quorum Slicing Consensus<br/>- Split-Brain Equivocation Elimination"]
+        QUARANTINE["Merkleized Quarantine Engine<br/>- Peer Trust Degradation Ledger<br/>- HMAC-SHA256 Cryptographic Receipts<br/>- Sub-150µs Edge Network Ejection"]
+    end
+
+    subgraph "Certified Mission Outputs"
+        DEF_OUT["Tactical Interceptor Commitment<br/>- 100% Phantom Tracks Quarantined<br/>- Zero Interceptor Magazine Depletion<br/>- Salvo Integrity Sustained Under 30% Traitors"]
+        IND_OUT["Deterministic Industrial Factory Flow<br/>- Rogue AGVs Isolated in Microseconds<br/>- Zero Phantom Emergency Stops<br/>- Continuous Assembly Line Throughput"]
+    end
+
+    DEF --> PHYS
+    IND --> PHYS
+    PHYS --> SPATIAL
+    SPATIAL --> BFT
+    BFT --> QUARANTINE
+    QUARANTINE --> DEF_OUT
+    QUARANTINE --> IND_OUT
+```
+
+---
+
+## 4. Mathematical Foundations & Verification Bounds
 
 ### 3.1 Kinematic Physics Bounding
 Any claimed target track telemetry $(\mathbf{p}_t, \mathbf{v}_t, a_t)$ broadcast by a peer drone is verified against aerodynamic flight envelopes:
