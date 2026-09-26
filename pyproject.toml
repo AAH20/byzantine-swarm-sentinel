@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "byzantine-swarm-sentinel"
+version = "1.0.0"
+description = "Adversarial Swarm Traitor Isolation & Sensor-Spoofing Immunity Benchmark with Kinematic Physics Auditing and BFT 2f+1 Quorum Consensus for combat drone swarms under contested EW."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Ahmed Hassan", email = "ahmed.hassan.aah@gmail.com" }
+]
+keywords = [
+    "defense-tech",
+    "swarm-intelligence",
+    "byzantine-fault-tolerance",
+    "bft",
+    "anti-spoofing",
+    "sensor-fusion",
+    "adversarial-resilience",
+    "quarantine",
+    "mesh-security",
+    "electronic-warfare",
+    "sovereignty",
+    "edge-computing",
+    "autonomous-drones",
+    "sybil-defense",
+    "kinematic-auditing"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Security"
+]
+
+[project.scripts]
+byzantine-swarm-sentinel = "cli:main"
